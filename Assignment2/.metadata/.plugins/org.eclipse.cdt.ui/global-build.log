@@ -1,0 +1,885 @@
+18:30:38 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:30:39 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:27 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:32 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:51 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:33:42 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:33:50 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+18:44:59 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:52:01 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:52:38 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:54:35 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:58:26 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:59:01 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+18:59:24 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:03:18 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:04:25 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In member function ‘void HammingCodes::addRedundantBits()’:
+../main.cpp:74:9: warning: suggest parentheses around ‘+’ inside ‘<<’ [-Wparentheses]
+   x = x << 1 + 1;
+         ^
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:04:41 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:15:26 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In member function ‘void HammingCodes::display()’:
+../main.cpp:81:10: error: no match for ‘operator^’ (operand types are ‘std::basic_ostream<char>’ and ‘int’)
+   cout<<1^1^1^0;
+          ^
+In file included from /usr/include/c++/5/ios:42:0,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../main.cpp:1:
+/usr/include/c++/5/bits/ios_base.h:91:3: note: candidate: std::_Ios_Fmtflags std::operator^(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+   operator^(_Ios_Fmtflags __a, _Ios_Fmtflags __b)
+   ^
+/usr/include/c++/5/bits/ios_base.h:91:3: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘std::_Ios_Fmtflags’
+/usr/include/c++/5/bits/ios_base.h:133:3: note: candidate: std::_Ios_Openmode std::operator^(std::_Ios_Openmode, std::_Ios_Openmode)
+   operator^(_Ios_Openmode __a, _Ios_Openmode __b)
+   ^
+/usr/include/c++/5/bits/ios_base.h:133:3: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘std::_Ios_Openmode’
+/usr/include/c++/5/bits/ios_base.h:173:3: note: candidate: std::_Ios_Iostate std::operator^(std::_Ios_Iostate, std::_Ios_Iostate)
+   operator^(_Ios_Iostate __a, _Ios_Iostate __b)
+   ^
+/usr/include/c++/5/bits/ios_base.h:173:3: note:   no known conversion for argument 1 from ‘std::basic_ostream<char>’ to ‘std::_Ios_Iostate’
+subdir.mk:18: recipe for target 'main.o' failed
+make: *** [main.o] Error 1
+19:15:41 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:16:07 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:16:30 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:47:39 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In member function ‘void HammingCodes::addRedundantBits()’:
+../main.cpp:76:16: error: invalid operands of types ‘int’ and ‘const char [2]’ to binary ‘operator<<’
+     cout<<j&k<<"\t";
+                ^
+make: *** [main.o] Error 1
+subdir.mk:18: recipe for target 'main.o' failed
+19:47:51 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:50:23 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In member function ‘void HammingCodes::addRedundantBits()’:
+../main.cpp:77:9: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]
+     if(j&k == k){
+         ^
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:50:40 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:52:16 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:54:24 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:54:35 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:55:01 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:55:10 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:58:40 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In member function ‘void HammingCodes::oboInput()’:
+../main.cpp:70:7: warning: name lookup of ‘i’ changed
+   for(i = rbitSet.end() - 1; i!=rbitSet.begin(); i--){
+       ^
+../main.cpp:13:27: warning:   matches this ‘HammingCodes::i’ under ISO standard rules
+  vector<bool> :: iterator i;
+                           ^
+../main.cpp:59:11: warning:   matches this ‘i’ under old rules
+   for(int i = 0; i<7;i++){
+           ^
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+19:59:42 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:01:15 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:02:47 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In member function ‘void HammingCodes::addRedundantBits()’:
+../main.cpp:103:36: warning: suggest parentheses around ‘-’ in operand of ‘&’ [-Wparentheses]
+      parity = parity ^ (bitSet[j&k - 1]);
+                                    ^
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:02:56 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:03:35 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:03:59 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:04:09 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:14 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:06:37 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:07:46 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:08:10 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:08:19 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:54 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:15:52 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:16:41 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:18:07 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:18:26 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:19:14 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:20:50 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:21:08 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:21:28 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:22:58 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:24:56 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:26:10 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:27:04 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:27:49 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:28:03 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:29:02 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:30:04 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:32:50 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:33:21 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:34:13 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:36:15 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:39:01 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:39:29 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:40:21 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:54:12 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:54:31 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:55:09 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:55:20 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+make: Nothing to be done for 'all'.
+20:56:29 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:56:59 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:57:23 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:57:50 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:58:15 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+20:59:15 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+21:00:52 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 
+21:01:06 **** Incremental Build of configuration Debug for project HammingCodes ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: HammingCodes
+Invoking: GCC C++ Linker
+g++  -o "HammingCodes"  ./main.o   
+Finished building target: HammingCodes
+ 

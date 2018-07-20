@@ -1,0 +1,64 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+class HammingCodes
+{
+private:
+	char a;
+	int m;
+	vector<int> rbitSet;
+	vector<int> bitSet;
+	vector<int> :: iterator i;
+public:
+	HammingCodes(){
+		a = 'n';
+		m = 0;
+	}
+	void getInput(){
+		cout<<"\nEnter a character to transfer: ";
+		cin>>a;
+		convertInput();
+	}
+	void convertInput(){
+		int x = (int)a;
+		int bit;
+		while(x!=0)
+		{
+			bit = x % 2;
+			x = x / 2;
+			rbitSet.push_back(bit);
+		}
+		if(rbitSet.size() < 8){
+			rbitSet.push_back(0);
+		}
+		cout<<"\nEnter BitSet is: ";
+		for(i = rbitSet.begin(); i!=rbitSet.end(); i++){
+			cout<<*i;
+		}
+
+		cout<<"\nCardinality of BitSet: ";
+
+		for(i = rbitSet.end() - 1; i!=rbitSet.begin(); i--){
+			bitSet.push_back(*i);
+		}
+		bitSet.push_back(*rbitSet.begin());
+		m = bitSet.size();
+		cout<<m;
+		cout<<endl;
+		for(i = bitSet.begin(); i!=bitSet.end(); i++){
+			cout<<*i;
+		}
+	}
+	int redundantBits()
+	{
+		int r;
+
+		return r;
+	}
+
+};
+int main()
+{
+	HammingCodes hammingCodes;
+	hammingCodes.getInput();
+}
