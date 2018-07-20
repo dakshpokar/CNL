@@ -13,7 +13,7 @@ class Subnet:
 		self.nsubs = int(input("Enter the number of subnets: "))
 		prefix_diff = int(math.log(self.nsubs)/math.log(2))		#bits to modify
 		list_ip = self.net_ip.split(".")
-		if(int(list_ip[0]) < 127):
+		if(int(list_ip[0]) <= 127):
 			class_id = "A"
 		elif(int(list_ip[0]) >= 128 and int(list_ip[0]) < 192):
 			class_id = "B"
@@ -26,9 +26,25 @@ class Subnet:
 		dict_masks = { "A": "255.0.0.0", "B" : "255.255.0.0", "C" : "255.255.255.0" } 
 		subnet_mask = dict_masks[class_id]
 		print("Therefore default subnet mask is: " + subnet_mask)
-		#To find subnet mask 
+				
+		if(class_id == "A"):
+			prefix_diff += 8
+			self.net_ip = self.net_ip + "/8"
+		elif(class_id == "B"):
+			prefix_diff += 16
+			self.net_ip = self.net_ip + "/16"
+		elif(class_id == "C"):
+			prefix_diff += 24
+			self.net_ip = self.net_ip + "/24"
+		self.subnets = list(ipaddress.ip_network(self.net_ip).subnets(int(math.log(self.nsubs)/math.log(2)))) 
+		
+		calc_ssbmask = self.calcSubnetMask(prefix_diff)
+		print("Calculated Subnet Mask is: " + calc_ssbmask)
+
+		self.display()
+		
+	def calcSubnetMask(self,prefix_diff):
 		ssbmask = []
-		prefix_diff += 8
 		if(prefix_diff in range(0,8)):
 			ssbmask.append(str(sum( 2**(8 - x) for x in range(1,prefix_diff+1))))
 			ssbmask.append(0)
@@ -50,10 +66,7 @@ class Subnet:
 			ssbmask.append(255)				
 			ssbmask.append(str(sum( 2**(8 - x) for x in range(1,prefix_diff+1-24))))					
 		calc_ssbmask = str(ssbmask[0]) + "." + str(ssbmask[1]) + "." + str(ssbmask[2]) + "." + str(ssbmask[3])
-		print("Calculated Subnet Mask is: " + calc_ssbmask)
-		#Anding SubnetMask and given IP to get Network IP
-		
-		
+		return calc_ssbmask
 		
 	def classless(self):
 		self.net_ip = str(input("Enter Classless Network IP: "))
@@ -66,9 +79,14 @@ class Subnet:
 		print(list_ip)
 		print(mask_bits)
 		
+		calc_ssbmask = self.calcSubnetMask(int(mask_bits)+prefix_diff)
+		print("Calculated Subnet Mask: " + calc_ssbmask)
+		
 		prefix_diff = int(math.log(self.nsubs)/math.log(2))
 		self.subnets = list(ipaddress.ip_network(self.net_ip).subnets(prefix_diff)) 
-		self.display()
+		self.display()		
+		
+		
 	def display(self):
 		c = 1
 		for i in self.subnets:
