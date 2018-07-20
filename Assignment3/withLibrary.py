@@ -85,7 +85,9 @@ class Subnet:
 		prefix_diff = int(math.log(self.nsubs)/math.log(2))
 		self.subnets = list(ipaddress.ip_network(self.net_ip).subnets(prefix_diff)) 
 		self.display()		
-		
+		choice = int(input("\nDo you want to find whether and IP is within subnet[0/1]: "))
+		if(choice == 1):
+			self.findwithinSubnet()
 		
 	def display(self):
 		c = 1
@@ -137,3 +139,8 @@ if __name__ == "__main__":
 		subnet.classless()
 	else:
 		subnet.classful()
+	choice = int(input("\nDo you want to ping an ip address[0/1]: "))
+	if(choice == 0):
+		exit()
+	elif(choice == 1):
+		subnet.pingIP()
