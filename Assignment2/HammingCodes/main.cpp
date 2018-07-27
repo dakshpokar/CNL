@@ -10,6 +10,7 @@ private:
 	int r;
 	vector<bool> rbitSet;
 	vector<bool> bitSet;
+	vector<bool> error;
 	vector<bool> :: iterator i;
 	bool redundancy;
 public:
@@ -17,9 +18,11 @@ public:
 		a = 'n';
 		m = 0;
 		r = 0;
+/*		
 		for(int i = 0; i<8;i++){
 			rbitSet.push_back(0);
 		}
+*/
 		redundancy = false;
 	}
 	void getInput(){
@@ -46,8 +49,6 @@ public:
 			rbitSet.push_back(0);
 		}
 		cout<<"\nEntered BitSet is: ";
-
-
 		for(i = rbitSet.end() - 1; i!=rbitSet.begin(); i--){
 			bitSet.push_back(*i);
 		}
@@ -62,16 +63,14 @@ public:
 		cout<<"\nEnter the bits one by one --";
 		int bit;
 
-		for(int j = 7; j>=0;j--){
+		for(int j = 8; j>=1;j--){
 			cout<<"\nEnter bit "<<j<<": ";
 			cin>>bit;
-			rbitSet[j] = bit;
+			rbitSet[j-1] = bit;
 		}
-		/*if(rbitSet.size() < 8){
-			rbitSet.push_back(0);
-		}*/
+
 		bitSet = rbitSet;
-		cout<<"\nEntered BitSet is: ";
+		cout<<"\nEntered Dataword is: ";
 		m = bitSet.size();
 
 		display();
@@ -94,12 +93,18 @@ public:
 		}
 		cout<<endl;
 		m = bitSet.size();
+		parityAdder();
+		redundancy = true;
+		display();
+	}
+	void parityAdder(){
 		int k = 1;
 		for(int i = 0;i<r;i++){
 			k = pow(2,i);
 			bool parity = 0;
 			for(int j = 1;j<=12;j++){
 				if((j&k) == k){
+					cout<<j<<" - ";
 					parity = parity ^ (bitSet[j-1]);
 				}
 			}
@@ -107,8 +112,6 @@ public:
 			cout<<"P"<<k<<" = "<<parity;
 			cout<<endl;
 		}
-		redundancy = true;
-		display();
 	}
 	void display(){
 		cout<<endl;
@@ -126,11 +129,88 @@ public:
 		}
 		cout<<*bitSet.begin();
 	}
+	void addNoise(){
+		int pos;
+		cout<<"\nEnter the bit you want to modify: ";
+		cin>>pos;
+		pos = pos - 1;
+		if(bitSet[pos] == 0){
+			bitSet[pos] = 1;
+		}
+		else{
+			bitSet[pos] = 0;
+		}
+	}
+	void transferData(){
+		int noise;
+		cout<<"\nDo you want to add Noise or transfer data as is[1/0]: ";
+		cin>>noise;
+		if(noise == 1){
+			addNoise();
+			cout<<"\nTransferred Data is: ";
+			display();
+		}
+		else{
+			cout<<"\nTransferred Data is: ";
+			display();
+		}
+		cout<<endl;
+		checkDataword();
+	}
+	void checkDataword(){
+		int k = 1;
+
+		for(int o = 0;o<r;o++){
+			k = pow(2,o);
+			bool parity = 0;
+			for(int j = 1;j<=12;j++){
+				if((j&k) == k){
+					parity = parity ^ (bitSet[j-1]);
+				}
+			}
+			error.push_back(parity);
+		}
+		cout<<endl;
+		int sum = 0;
+		int c = 0;
+		for(i = error.begin();i!=error.end();i++){
+			sum = sum + (pow(2,c) * (int(*i)));
+			c++;
+		}
+		if(sum != 0){
+			cout<<"Found error at: "<<sum;
+
+		cout<<"\nCorrecting the error: ";
+		if(bitSet[sum - 1] == 0){
+			bitSet[sum - 1] = 1;
+		}
+		else{
+			bitSet[sum - 1] = 0;
+		}
+		cout<<"\nCorrector Dataword is: ";
+		cout<<endl;
+		}
+		else{
+			cout<<"\nNo error Found";
+			cout<<"\nDataword is: \n";
+		}
+		for(int o = m-r;o>=1;o--){
+			cout<<"D"<<o<<"\t";
+		}
+		cout<<endl;
+		for(int o = m;o>=1;o--){
+			if(log(o)/log(2) != int(log(o)/log(2))){
+				cout<<bitSet[o-1]<<"\t";
+			}
+		}
+	}
 
 };
 int main()
 {
 	HammingCodes hammingCodes;
-	hammingCodes.oboInput();
+	hammingCodes.getInput();
 	hammingCodes.redundantBits();
+	hammingCodes.transferData();
+
 }
