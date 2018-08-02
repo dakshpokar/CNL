@@ -1,11 +1,53 @@
 #Importing all necessary libraries
 import socket
+import random
+import threading
 
+class Server:
+	def __init__(self):
+		thread = threading.Thread(target = self.run, args = ())
+		thread.daemon = True
+		thread.start()
+	def run(self):
+		s = socket.socket()
+		print("Socket created successfully.")
+		port = random.randint(10000,30000)
+		s.bind(('', port))
+		print("Socket binded to port "+str(port))
+		s.listen(5)
+		print("Awaiting for connections")
+		while True:
+			conn, addr = s.accept()
+			print("Client connected having "+str(addr)+" as Address")
+			message = 'Welcome to Chat Server'
+			conn.sendall(message.encode('utf-8'))
+			conn.close()
+class Client:
+	def __init__(self):
+		thread = threading.Thread(target = self.run, args = ())
+		thread.daemon = True
+		thread.start()
+	def run(self):
+
+		port = int(input("Enter the port number of Server: "))
+		s = socket.socket()
+		s.connect(('127.0.0.1', port))
+		print(s.recv(1024).decode('utf-8'))
+		s.close()
 class Chat:
+	server = None
+	client = None
 	def createChatServer(self):
-		print("Create Chat Server")
+		print("#################################")
+		print("######## Create a Server ########")
+		print("#################################")
+		self.server = Server()
+		return
+		
 	def joinChatServer(self):
 		print("Joined Chat Server")
+		self.client = Client()
+		return
 		
 if __name__ == "__main__":
 	chat = Chat()
