@@ -2,6 +2,8 @@
 import socket
 import random
 import threading
+import os
+import sys
 
 class Server:
 	clients = {}
@@ -29,10 +31,30 @@ class Server:
 			message = "Its Unique ID: " + uid
 			print(message)
 			conn.sendall(uid.encode('utf-8'))
-	def broadcastMessage(self):
-		print("Broadcaster")
-	def sendMessage(self):
-		print("Sender")
+	def sendMessage(self, uid):
+		while True:
+			msg = bytes(input("Enter your message: "), "utf-8")
+			self.clients[uid].send(msg)
+		
+	def receiveFrom(self, uid):
+		while True:
+			msg = self.clients[uid].recv(1024)
+			print("Received: " + msg.decode("utf-8"))
+	def chatP2P(self):
+		os.system("clear")
+		print("Server Side Chat Window")
+		self.showClients()
+		clientID = int(input("Enter ID: "))
+		threadS = threading.Thread(target = self.sendMessage, args = (clientID,))
+		threadR = threading.Thread(target = self.receiveFrom, args = (clientID,))
+		threadS.start()
+		threadS.join()
+		threadR.start()
+		threadR.join()
+		return
+	def chatBroadcast(self):
+		
+		return
 	def showClients(self):
 		for uid in self.clients:
 			print(str(uid) + " belongs to " + str(self.addr[uid][0]) + " - " + str(self.addr[uid][1]))
@@ -41,8 +63,9 @@ class Client:
 	uid = None
 	def __init__(self):
 		thread = threading.Thread(target = self.run, args = ())
-		thread.daemon = True
 		thread.start()
+		thread.join()	
+		
 	def run(self):
 		port = int(input("Enter the port number of Server: "))
 		self.s = socket.socket()
@@ -50,11 +73,29 @@ class Client:
 		uid = self.s.recv(1024).decode('utf-8')
 		print("\nYou are connected to server and you have been assigned - ")
 		print("Unique ID: " + uid)
+	def chatP2PServer(self):
+		os.system("clear")
+		print("Peer-2-Peer Chat Window Started")
+		threadS = threading.Thread(target = self.sendMessage, args = ())
+		threadR = threading.Thread(target = self.receiveFrom, args = ())
+		threadS.start()
+		threadR.start()
+		return
+	def chatP2PClient(self):
+	
+		return
+	def chatBroadcast(self):
 		
-		
+		return
 	def sendMessage(self):
-		#abstract
-		print("Abstract")
+		while True:
+			msg = bytes(input("Enter your message: "), "utf-8")
+			self.s.send(msg)
+		
+	def receiveFrom(self):
+		while True:
+			msg = self.s.recv(1024)
+			print("Received: " + msg.decode("utf-8"))
 	
 class Chat:
 	server = None
@@ -70,13 +111,15 @@ class Chat:
 			print("#################################")
 			print("######## Server Options #########")
 			print("#################################")
-			print("1. Chat with particular client")
+			print("1. Chat with particular Client")
 			print("2. Show connected clients")
-			print("3. Broadcast Message to all clients")
+			print("3. Broadcast Chat with all Clients")
 		
 			choice = int(input("Enter your choice: "))
 			if(choice == 1):
-				self.server.chatP2P()
+				thread = threading.Thread(target = self.server.chatP2P, args = ())
+				thread.start()
+				thread.join()	
 			elif(choice == 2):
 				self.server.showClients()
 			elif(choice == 3):
@@ -93,17 +136,22 @@ class Chat:
 	def joinChatServer(self):
 		print("Joined Chat Server")
 		self.client = Client()
-		
+		conti = True
 		while(conti == True):
 			print("#################################")
 			print("######## Client Options #########")
 			print("#################################")
 			print("1. P2P with Server")
-			print("2. Broadcast Messanger")
+			print("2. P2P with Clients on Server")
+			print("3. Broadcast with Everyone on Server")
 			choice = int(input("Enter your choice: "))
 			if(choice == 1):
-				self.client.chatP2P()
+				thread = threading.Thread(target = self.client.chatP2PServer, args = ())
+				thread.start()
+				thread.join()
 			elif(choice == 2):
+				self.client.chatP2PClient()
+			elif(choice == 3):
 				self.client.chatBroadcast()
 			else:
 				print("Invalid Choice")
