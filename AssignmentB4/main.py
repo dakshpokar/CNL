@@ -4,6 +4,8 @@ import random
 import threading
 
 class Server:
+	clients = {}
+	addr = {}
 	def __init__(self):
 		thread = threading.Thread(target = self.run, args = ())
 		thread.daemon = True
@@ -18,16 +20,19 @@ class Server:
 		print("Awaiting for connections")
 		while True:
 			conn, addr = s.accept()
+			rand_id = random.randint(1,1000)
 			print("Client connected having "+str(addr)+" as Address")
-			message = 'Welcome to Chat Server'
+			self.clients[rand_id] = conn 
+			self.addr[rand_id] = addr
+			message = "\nYour unique ID: " + str(rand_id)
 			conn.sendall(message.encode('utf-8'))
-			conn.close()
 	def broadcastMessage(self):
 		print("Broadcaster")
 	def sendMessage(self):
 		print("Sender")
 	def showClients(self):
-		print("Clients")
+		for uid in self.clients:
+			print(str(uid) + " belongs to " + str(self.addr[uid][0]) + " - " + str(self.addr[uid][1]))
 class Client:
 	s = None
 	def __init__(self):
@@ -35,12 +40,13 @@ class Client:
 		thread.daemon = True
 		thread.start()
 	def run(self):
-
 		port = int(input("Enter the port number of Server: "))
 		self.s = socket.socket()
 		self.s.connect(('127.0.0.1', port))
+		print(self.s.recv(1024).decode('utf-8'))
 	def sendMessage(self):
-		self.s.sendall
+		#abstract
+		print("Abstract")
 	
 class Chat:
 	server = None
