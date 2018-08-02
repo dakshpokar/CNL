@@ -22,7 +22,14 @@ class Server:
 			message = 'Welcome to Chat Server'
 			conn.sendall(message.encode('utf-8'))
 			conn.close()
+	def broadcastMessage(self):
+		print("Broadcaster")
+	def sendMessage(self):
+		print("Sender")
+	def showClients(self):
+		print("Clients")
 class Client:
+	s = None
 	def __init__(self):
 		thread = threading.Thread(target = self.run, args = ())
 		thread.daemon = True
@@ -30,10 +37,11 @@ class Client:
 	def run(self):
 
 		port = int(input("Enter the port number of Server: "))
-		s = socket.socket()
-		s.connect(('127.0.0.1', port))
-		print(s.recv(1024).decode('utf-8'))
-		s.close()
+		self.s = socket.socket()
+		self.s.connect(('127.0.0.1', port))
+	def sendMessage(self):
+		self.s.sendall
+	
 class Chat:
 	server = None
 	client = None
@@ -42,8 +50,32 @@ class Chat:
 		print("######## Create a Server ########")
 		print("#################################")
 		self.server = Server()
-		return
+		print("\nServer Made Successfully")
+		conti = True
+		while(conti == True):
+			print("#################################")
+			print("######## Server Options #########")
+			print("#################################")
+			print("1. Send message to particular client")
+			print("2. Show connected clients")
+			print("3. Broadcast Message to all clients")
 		
+			choice = int(input("Enter your choice: "))
+			if(choice == 1):
+				self.server.sendMessage()
+			elif(choice == 2):
+				self.server.showClients()
+			elif(choice == 3):
+				self.server.broadcastMessage()
+			else:
+				print("Invalid Choice")
+			print("#################################")
+			y = int(input("Do you want to continue Server Options[1/0]: "))
+			if(y == 0):
+				conti = False
+			else:
+				conti = True
+	
 	def joinChatServer(self):
 		print("Joined Chat Server")
 		self.client = Client()
@@ -66,7 +98,7 @@ if __name__ == "__main__":
 		else:
 			print("Invalid Choice")
 		print("#################################")
-		y = int(input("Do you want to continue[1/0]: "))
+		y = int(input("Do you want to continue Chat Options[1/0]: "))
 		if(y == 0):
 			conti = False
 		else:
