@@ -78,11 +78,11 @@ class Subnet:
 		mask_bits = first_split[1]
 		print(list_ip)
 		print(mask_bits)
-		
+		prefix_diff = int(math.log(self.nsubs)/math.log(2))
 		calc_ssbmask = self.calcSubnetMask(int(mask_bits)+prefix_diff)
 		print("Calculated Subnet Mask: " + calc_ssbmask)
 		
-		prefix_diff = int(math.log(self.nsubs)/math.log(2))
+
 		self.subnets = list(ipaddress.ip_network(self.net_ip).subnets(prefix_diff)) 
 		self.display()		
 		choice = int(input("\nDo you want to find whether and IP is within subnet[0/1]: "))
@@ -107,13 +107,23 @@ class Subnet:
 		ip = str(input("Enter the IP you want to set: "))
 		os.system("ifconfig")
 		inteface = str(input("Enter your interface: "))
-		os.system("sudo ifconfig "+inteface+" "+ip)
+		try:
+			os.system("sudo ifconfig "+inteface+" "+ip)
+		except Exception as e:
+			print(e)
+		print("IP Address " + ip + " was assigned to the system.") 
 	
 	def pingIP(self):
 		ip = str(input("Enter the ip address: "))
-		x = os.system("ping "+ip+" -c 1")
+		try:
+			x = os.system("ping "+ip+" -c 1")
+		except Exception as e:
+			print(e)	
 		if(x == 512):
 			print("Host is down!")
+		elif(x == 0):
+			print("Host is up!")
+			
 	def checkIP(self, ip):
 		list_ip = ip.split(".")
 		if not '.' in ip:
@@ -139,6 +149,7 @@ if __name__ == "__main__":
 		subnet.classless()
 	else:
 		subnet.classful()
+	subnet.setIP()
 	choice = int(input("\nDo you want to ping an ip address[0/1]: "))
 	if(choice == 0):
 		exit()
