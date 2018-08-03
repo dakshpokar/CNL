@@ -31,25 +31,18 @@ class Server:
 			message = "Its Unique ID: " + uid
 			print(message)
 			conn.sendall(uid.encode('utf-8'))
-<<<<<<< HEAD
 	def sender(self, uid):
 		while True:
 			msg = bytes(input(), "utf-8")
 			self.sendMessage(msg, uid)
 	def sendMessage(self, msg, uid):
-		self.clients[uid].send(msg)
-		print("##################################################################")
-=======
-	def sendMessage(self, uid):
 		while True:
-			msg = bytes(input("Enter your message: "), "utf-8")
 			self.clients[uid].send(msg)
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
+			print("##################################################################")
 		
 	def receiveFrom(self, uid):
 		while True:
 			msg = self.clients[uid].recv(1024)
-<<<<<<< HEAD
 			print("Received from " + "<"+str(self.addr[uid][0]) + "-" + str(uid) +">"+ ": " + msg.decode("utf-8"))
 			print("##################################################################")
 			if(str(msg.decode("utf-8")) == "exit0"):
@@ -57,28 +50,16 @@ class Server:
 				exit()
 			
 				
-=======
-			print("Received: " + msg.decode("utf-8"))
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 	def chatP2P(self):
 		os.system("clear")
 		print("Server Side Chat Window")
 		self.showClients()
 		clientID = int(input("Enter ID: "))
-<<<<<<< HEAD
 		threadS = threading.Thread(target = self.sender, args = (clientID,))
 		threadR = threading.Thread(target = self.receiveFrom, args = (clientID,))
 		threadS.start()
 		print("##################################################################")
 		threadR.start()
-=======
-		threadS = threading.Thread(target = self.sendMessage, args = (clientID,))
-		threadR = threading.Thread(target = self.receiveFrom, args = (clientID,))
-		threadS.start()
-		threadS.join()
-		threadR.start()
-		threadR.join()
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 		return
 	def chatBroadcast(self):
 		
@@ -107,10 +88,7 @@ class Client:
 		threadS = threading.Thread(target = self.sendMessage, args = ())
 		threadR = threading.Thread(target = self.receiveFrom, args = ())
 		threadS.start()
-<<<<<<< HEAD
 		print("##################################################################")
-=======
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 		threadR.start()
 		return
 	def chatP2PClient(self):
@@ -121,7 +99,6 @@ class Client:
 		return
 	def sendMessage(self):
 		while True:
-<<<<<<< HEAD
 			msg = bytes(input(), "utf-8")
 			self.s.send(msg)
 			print("##################################################################")
@@ -130,15 +107,6 @@ class Client:
 			msg = self.s.recv(1024)
 			print("Received from Server: " + msg.decode("utf-8"))
 			print("##################################################################")
-=======
-			msg = bytes(input("Enter your message: "), "utf-8")
-			self.s.send(msg)
-		
-	def receiveFrom(self):
-		while True:
-			msg = self.s.recv(1024)
-			print("Received: " + msg.decode("utf-8"))
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 	
 class Chat:
 	server = None
@@ -162,12 +130,8 @@ class Chat:
 			if(choice == 1):
 				thread = threading.Thread(target = self.server.chatP2P, args = ())
 				thread.start()
-<<<<<<< HEAD
 				thread.join()
 				break	
-=======
-				thread.join()	
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 			elif(choice == 2):
 				self.server.showClients()
 			elif(choice == 3):
@@ -197,10 +161,7 @@ class Chat:
 				thread = threading.Thread(target = self.client.chatP2PServer, args = ())
 				thread.start()
 				thread.join()
-<<<<<<< HEAD
 				break
-=======
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 			elif(choice == 2):
 				self.client.chatP2PClient()
 			elif(choice == 3):
@@ -227,15 +188,10 @@ if __name__ == "__main__":
 		choice = int(input("Enter your choice: "))
 		if(choice == 1):
 			chat.createChatServer()
-<<<<<<< HEAD
 			break
 		elif(choice == 2):
 			chat.joinChatServer()
 			break
-=======
-		elif(choice == 2):
-			chat.joinChatServer()
->>>>>>> ba4c922e6bc67b6fc792ef77da21a1bc6fc61c57
 		else:
 			print("Invalid Choice")
 		print("#################################")
