@@ -45,9 +45,8 @@ class Server:
 			print("Received from " + "<"+str(self.addr[uid][0]) + "-" + str(uid) +">"+ ": " + msg.decode("utf-8"))
 			print("##################################################################")
 			if(str(msg.decode("utf-8")) == "exit0"):
-				print("Exit detected!")
-				exit()
-			
+				self.clients[uid].close()
+				break
 				
 	def chatP2P(self):
 		os.system("clear")
