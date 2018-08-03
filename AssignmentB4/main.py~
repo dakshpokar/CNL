@@ -75,9 +75,10 @@ class Client:
 		thread.join()	
 		
 	def run(self):
+		ip = str(input("Enter the IP of the Server: "))
 		port = int(input("Enter the port number of Server: "))
 		self.s = socket.socket()
-		self.s.connect(('127.0.0.1', port))
+		self.s.connect((ip, port))
 		uid = self.s.recv(1024).decode('utf-8')
 		print("\nYou are connected to server and you have been assigned - ")
 		print("Unique ID: " + uid)
