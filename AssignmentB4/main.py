@@ -169,6 +169,7 @@ class Chat:
 				self.server.showClients()
 			elif(choice == 3):
 				self.server.chatBroadcast()
+				break
 			else:
 				print("Invalid Choice")
 			print("#################################")
