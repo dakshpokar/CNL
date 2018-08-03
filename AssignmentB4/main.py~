@@ -36,9 +36,8 @@ class Server:
 			msg = bytes(input(), "utf-8")
 			self.sendMessage(msg, uid)
 	def sendMessage(self, msg, uid):
-		while True:
-			self.clients[uid].send(msg)
-			print("##################################################################")
+		self.clients[uid].send(msg)
+		print("##################################################################")
 		
 	def receiveFrom(self, uid):
 		while True:
