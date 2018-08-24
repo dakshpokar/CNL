@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<errno.h>
+#include<string.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#define MYPORT 3160
+#define MAXBUFFLEN 100
+struct sock_addr{
+	unsigned short sa_family;
+	unsigned short sa_data[14];
+};
+struct sock_addr_in{
+	short int sin_family;
+	unsigned short int sin_port;
+	struct in_addr sin_addr;
+	unsigned char sin_zero[8];
+};
+int main(){
+	int sockfd;
+	struct sock_addr_in my_addr;
+	struct sock_addr_in their_addr;
+	int addr_len, numbytes;
+	char buf[MAXBUFFLEN];
+	if((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) == -1){
+		perror("socket");
+		exit(1);
+	}
+
+	my_addr.sin_family = AF_INET;
+	my_addr.sin_port = htons(MYPORT);
+	inet_aton("10.0.0.5", &(my_addr.sin_addr));
+	my_addr.sin_addr.s_addr = INADDR_ANY;
+	memset(&(my_addr.sin_zero),"\0", 8);
+	if(bind(sockfd,my_addr,addr_len) == -1){
+		perror("bind");
+		exit(1);
+	}
+	addr_len = ;
+	if((numbytes=recvfrom(, , , , ,)) == -1){
+		perror("recvfrom");
+		exit(1);
+	}
+
+	printf("Got packet from %s IP_address\n",inet_ntoa());
+	printf("Packet is %d bytes long\n",);
+	buf[numbytes] = "\0";
+	printf("Packet contains the message \"%s\"\n",);
+	close();
+	return 0;
+}
+

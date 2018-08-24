@@ -1,0 +1,88 @@
+09:20:33 **** Incremental Build of configuration Debug for project AssignmentA5 ****
+make all 
+Building file: ../listener.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"listener.d" -MT"listener.d" -o "listener.o" "../listener.c"
+../listener.c: In function ‘main’:
+../listener.c:15:22: error: storage size of ‘my_addr’ isn’t known
+  struct sock_addr_in my_addr;
+                      ^
+../listener.c:16:22: error: storage size of ‘their_addr’ isn’t known
+  struct sock_addr_in their_addr;
+                      ^
+../listener.c:19:2: error: too few arguments to function ‘socket’
+  if((sockfd = socket()) == -1){
+  ^
+In file included from ../listener.c:7:0:
+/usr/include/sys/socket.h:113:12: note: declared here
+ extern int socket (int __domain, int __type, int __protocol) __THROW;
+            ^
+../listener.c:24:23: error: expected expression before ‘;’ token
+  my_addr.sin_family = ;
+                       ^
+../listener.c:25:2: error: too few arguments to function ‘htons’
+  my_addr.sin_port = htons();
+  ^
+In file included from ../listener.c:8:0:
+/usr/include/netinet/in.h:368:17: note: declared here
+ extern uint16_t htons (uint16_t __hostshort)
+                 ^
+../listener.c:26:28: error: expected expression before ‘;’ token
+  my_addr.sin_addr.s_addr = ;
+                            ^
+../listener.c:28:11: error: expected expression before ‘,’ token
+  if(bind( , , ,) == -1){
+           ^
+../listener.c:28:11: error: too many arguments to function ‘bind’
+In file included from ../listener.c:7:0:
+/usr/include/sys/socket.h:123:12: note: declared here
+ extern int bind (int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len)
+            ^
+../listener.c:32:13: error: expected expression before ‘;’ token
+  addr_len = ;
+             ^
+../listener.c:33:24: error: expected expression before ‘,’ token
+  if((numbytes=recvfrom(, , , , ,)) == -1){
+                        ^
+../listener.c:38:2: error: too few arguments to function ‘inet_ntoa’
+  printf("Got packet from %s IP_address\n",inet_ntoa());
+  ^
+In file included from ../listener.c:9:0:
+/usr/include/arpa/inet.h:53:14: note: declared here
+ extern char *inet_ntoa (struct in_addr __in) __THROW;
+              ^
+../listener.c:39:37: error: expected expression before ‘)’ token
+  printf("Packet is %d bytes long\n",);
+                                     ^
+../listener.c:40:16: warning: assignment makes integer from pointer without a cast [enabled by default]
+  buf[numbytes] = "\0";
+                ^
+../listener.c:41:48: error: expected expression before ‘)’ token
+  printf("Packet contains the message \"%s\"\n",);
+                                                ^
+../listener.c:42:2: error: too few arguments to function ‘close’
+  close();
+  ^
+In file included from ../listener.c:3:0:
+/usr/include/unistd.h:353:12: note: declared here
+ extern int close (int __fd);
+            ^
+../listener.c:18:7: warning: variable ‘buf’ set but not used [-Wunused-but-set-variable]
+  char buf[MAXBUFFLEN];
+       ^
+../listener.c:17:6: warning: variable ‘addr_len’ set but not used [-Wunused-but-set-variable]
+  int addr_len, numbytes;
+      ^
+../listener.c:16:22: warning: unused variable ‘their_addr’ [-Wunused-variable]
+  struct sock_addr_in their_addr;
+                      ^
+../listener.c:15:22: warning: unused variable ‘my_addr’ [-Wunused-variable]
+  struct sock_addr_in my_addr;
+                      ^
+../listener.c:14:6: warning: variable ‘sockfd’ set but not used [-Wunused-but-set-variable]
+  int sockfd;
+      ^
+make: *** [listener.o] Error 1
+
+09:20:33 Build Finished (took 218ms)
+

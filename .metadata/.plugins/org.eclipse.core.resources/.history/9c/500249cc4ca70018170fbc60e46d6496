@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<errno.h>
+#include<string.h>
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#define MYPORT 3160
+#define MAXBUFFLEN 100
+
+int main(){
+	int sockfd;
+	struct sock_addr_in my_addr;
+	struct sock_addr_in their_addr;
+	int addr_len, numbytes;
+	char buf[MAXBUFFLEN];
+	if((sockfd = socket()) == -1){
+		perror("socket");
+		exit(1);
+	}
+	my_addr.sin_family = ;
+	my_addr.sin_port = htons();
+
+}
