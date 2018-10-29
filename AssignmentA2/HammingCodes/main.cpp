@@ -75,6 +75,7 @@ public:
 
 		display();
 	}
+	
 	void redundantBits()
 	{
 		for(r = 0; r<10; r++){
@@ -85,6 +86,7 @@ public:
 		cout<<"\nNumber of Redundant Bits: "<<r;
 		addRedundantBits();
 	}
+	
 	void addRedundantBits(){
 		int i = pow(2,0);
 		while(i<=m){
@@ -97,6 +99,7 @@ public:
 		redundancy = true;
 		display();
 	}
+	
 	void parityAdder(){
 		int k = 1;
 		for(int i = 0;i<r;i++){
@@ -113,6 +116,7 @@ public:
 			cout<<endl;
 		}
 	}
+	
 	void display(){
 		cout<<endl;
 		for(int j = bitSet.size(); j>0;j--){
@@ -129,6 +133,7 @@ public:
 		}
 		cout<<*bitSet.begin();
 	}
+	
 	void addNoise(){
 		int pos;
 		cout<<"\nEnter the bit you want to modify: ";
@@ -141,6 +146,7 @@ public:
 			bitSet[pos] = 0;
 		}
 	}
+	
 	void transferData(){
 		int noise;
 		cout<<"\nDo you want to add Noise or transfer data as is[1/0]: ";
@@ -157,6 +163,7 @@ public:
 		cout<<endl;
 		checkDataword();
 	}
+	
 	void checkDataword(){
 		int k = 1;
 

@@ -61,4 +61,3 @@ if(choice == 1):
 else:
 	client = Client()
 	client.create()
-	client.chatWindow()

@@ -38,7 +38,6 @@ int main()
 	count = 0;
 	while ( file.good() )
 	{
-		count+=1;
 	     	getline(file,sr_no,','); 
 		getline(file,time,',');
 		getline(file,source,',');
@@ -50,6 +49,7 @@ int main()
 		if(s1.find(protocol) != std::string::npos)	{
 			cout << source <<"\t"<< destination <<"\t"<< proto<< "\t"<<len<<"\t"<<info<<endl; 
 		}
+		count+=1;
 	}
 	cout<<"\nTotal number of packets: "<<count<<endl;
 	return 0;

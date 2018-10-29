@@ -51,6 +51,7 @@ $ns duplex-link-op $n2 $n3 queuePos 0.5
 #Setup a TCP connection
 set tcp1 [new Agent/TCP]
 $tcp1 set class_ 2
+#Attaching agent tcp1 to n0 node
 $ns attach-agent $n0 $tcp1
 
 set sink1 [new Agent/TCPSink]

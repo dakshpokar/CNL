@@ -6,6 +6,7 @@ class Subnet:
 	net_ip = ""
 	nsubs = 0
 	subnets = []
+	
 	def classful(self):
 		self.net_ip = str(input("Enter Classful Network IP: "))
 		if self.checkIP(self.net_ip) == False:
@@ -42,7 +43,7 @@ class Subnet:
 		print("Calculated Subnet Mask is: " + calc_ssbmask)
 
 		self.display()
-		
+	
 	def calcSubnetMask(self,prefix_diff):
 		ssbmask = []
 		if(prefix_diff in range(0,8)):
@@ -82,7 +83,6 @@ class Subnet:
 		calc_ssbmask = self.calcSubnetMask(int(mask_bits)+prefix_diff)
 		print("Calculated Subnet Mask: " + calc_ssbmask)
 		
-
 		self.subnets = list(ipaddress.ip_network(self.net_ip).subnets(prefix_diff)) 
 		self.display()		
 		choice = int(input("\nDo you want to find whether and IP is within subnet[0/1]: "))
